@@ -1,0 +1,16 @@
+<!-- downloader/templates/downloader/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YouTube Video Downloader</title>
+</head>
+<body>
+    <h1>Download YouTube Video</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="link">YouTube Link:</label>
+        <input type="text" name="link" id="link" required>
+        <button type="submit">Download</button>
+    </form>
+</body>
+</html>
